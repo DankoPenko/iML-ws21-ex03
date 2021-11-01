@@ -104,7 +104,8 @@ class Dataset:
                  normalize:bool=False,
                  categorical:bool=False,
                  impute_strategy:str="remove"):
-        self._data = pd.read_csv(os.path.join("datasets", dataset_name + ".csv")).to_numpy()
+        # self._data = pd.read_csv(os.path.join("datasets", dataset_name + ".csv")).to_numpy()
+        self._data = pd.read_csv("F:\iml\iML-ws21-ex03\datasets\\" + dataset_name + ".csv").to_numpy()
         
         self.dataset_name = dataset_name
         self.input_ids = input_ids

@@ -30,7 +30,7 @@ def test_get_bounds():
     global module, X_train, s
     
     bounds = module.get_bounds(X_train, s, n_intervals=69)
-    
+
     assert len(bounds) == 70
     assert np.round(bounds[-1], 4) == 0.9744
     assert np.round(bounds[44], 4) == 0.6367
